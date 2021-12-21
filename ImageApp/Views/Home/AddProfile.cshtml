@@ -1,0 +1,15 @@
+﻿@model Images
+@{
+    ViewData["Title"] = "AddProfile";
+}
+
+<h1>AddProfile</h1>
+
+<form method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <input asp-for="Name" placeholder="Enter user name" />
+        <input asp-for="Picture" type="file" name="file" />
+        <button type="submit" class="btn btn-success">Add Profile</button>
+    </div>
+</form>
+
